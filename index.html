@@ -1,0 +1,65 @@
+# for-icaaawww
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For caw 💗</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #yes {
+      background: #ff5c8a;
+      color: white;
+    }
+    #no {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>caw, will you be my valentine? 💘</h2>
+  <button id="yes" onclick="yesClicked()">Yes</button>
+  <button id="no" onmouseover="moveNo()">No</button>
+  <p id="result"></p>
+</div>
+
+<script>
+  function yesClicked() {
+    document.getElementById("result").innerText =
+      "Yey!! Just wanted you to know you’re special to me, caw.";
+  }
+
+  function moveNo() {
+    const noBtn = document.getElementById("no");
+    noBtn.style.position = "absolute";
+    noBtn.style.top = Math.random() * 80 + "%";
+    noBtn.style.left = Math.random() * 80 + "%";
+  }
+</script>
+
+</body>
+</html>
+
